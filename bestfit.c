@@ -36,8 +36,8 @@ void main(){
         }
     }
     
-    for(i=0;i<p;i++){
-        for(j=0;j<b;j++){
+    for(i=0;i<b-1;i++){
+        for(j=0;j<b-i-1;j++){
             if(B[j].alloc==-1 && B[j].size>=P[i].size){
                 P[i].Blockno=B[j].id;
                 B[j].alloc=1;
